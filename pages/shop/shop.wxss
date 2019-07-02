@@ -1,0 +1,26 @@
+.shopbox{
+	background: #fff;
+    width: 100%;
+	padding: 16rpx 16rpx 0;
+	box-sizing: border-box;
+	display: flex;
+	margin-bottom: 16rpx;
+}
+.shop-logo{
+	flex: 0 0 180rpx;
+}
+.shop-logo image{
+	width: 160rpx;
+	height: 160rpx;
+}
+.shop-info .name{
+	font-size: 28rpx;
+	font-weight: bold;
+	line-height: 1;
+	margin-bottom: 10rpx;
+}
+.shop-info .desc{
+	font-size: 24rpx;
+	color: #aaa;
+	line-height: 36rpx;
+}

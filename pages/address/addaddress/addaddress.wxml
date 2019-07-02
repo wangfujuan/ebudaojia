@@ -1,0 +1,39 @@
+<view class="container">
+    <view class="title">联系人</view>
+    <view class="list">
+        <view class="list-item">
+            <text class="list-item-info">姓名</text>
+            <input placeholder-style="color: #999;font-family: MicroSoft YaHei;" placeholder="请填写收货人姓名" disabled="true" auto-focus/>
+        </view>
+        <view class="list-item">
+            <text class="list-item-info"></text>
+            <radio-group class="radio-group" bindchange="radioChange">
+                <label class="radio">
+                    <radio value="男" checked="true" color="#ff5000"/>先生 
+                </label>
+                <label class="radio">
+                    <radio value="女" color="#ff5000" />女士
+                </label>
+            </radio-group>
+        </view>
+        <view class="list-item">
+            <text class="list-item-info">手机</text>
+            <input placeholder-style="color: #999;font-family: MicroSoft YaHei;" placeholder="请填写收货手机号" disabled="true" auto-focus/>
+        </view>
+    </view>
+    <view class="title">收货地址</view>
+    <view class="list">
+        <view class="list-item" bindtap="selectAddr">
+            <text class="list-item-info">小区/大厦</text>
+            <view class="address"><image src="/images/address.png"></image><text>选择地址</text></view>
+            <view class="pos-right">
+                <image src="/images/right.png"></image>
+            </view>
+        </view>
+        <view class="list-item">
+            <text class="list-item-info">楼号-门牌号</text>
+            <input placeholder-style="color: #999;font-family: MicroSoft YaHei;" placeholder="例：10号楼438室" disabled="true" auto-focus/>
+        </view>
+    </view>
+    <button class="save">保存</button>
+</view>

@@ -1,0 +1,43 @@
+<view wx:for="{{carts}}" class="carts-item" data-title="{{item.title}}" data-url="{{item.url}}" bindtap="bindViewTap">
+<view class="my-wrap"> 
+    <view class="my-tlt">{{item.title}}</view>
+<view class="my-list bordernone">
+<icon wx:if="{{item.selected}}" type="success_circle" size="20" bindtap="bindCheckbox" data-index="{{index}}" class="my-check"/>
+<icon wx:else type="circle" size="20" bindtap="bindCheckbox" data-index="{{index}}" class="my-check"/>
+<image src="{{item.image}}" class="my-pic" mode="aspectFill"></image>
+<view class="my-left">
+<view class="my-title"> K金砖玉石电视背景墙砖</view>
+<text class="my-txt">尺寸：800X800</text>
+<view class="my-bnt">
+<!-- 减号 -->
+<text class="{{minusStatuses[index]}} bnt" data-index="{{index}}" bindtap="bindMinus">-</text>
+<!-- 数值 -->
+<input type="number" bindchange="bindManual" class="int" value="{{item.num}}" />
+<!-- 加号 -->
+<text class="normal bnt" data-index="{{index}}" bindtap="bindPlus">+</text>]
+</view>
+</view>
+<view class="my-right">
+<icon class="iconfont del"/>
+<text class="gay">￥{{item.price}}</text>
+</view>
+</view>
+</view>
+<view class="float">
+<!-- 全选 -->
+<view bindtap="bindSelectAll" class="my-sel" >
+<icon wx:if="{{selectedAllStatus}}" type="success_circle" size="20" class="l-mycheck"/>
+<icon wx:else type="circle" size="20" class="l-mycheck"/>
+<text>全选</text>
+</view>
+<view class="my-rightbox">
+<view class="my-count" data='{{sep}}'>
+<!-- 统计 -->
+合计（不含运费）：￥<text>{{count}}</text>
+</view>
+<view class="my-bnts" bindtap="setPayment" >
+结算（<text>{{number}}</text>）
+</view>
+</view>
+</view>
+</view>

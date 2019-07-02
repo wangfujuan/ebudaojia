@@ -1,0 +1,66 @@
+view,text{
+	box-sizing: border-box;
+}
+
+.curaddr{
+	color: #ff5000;
+}
+
+.botbtn{
+	width: 100%;
+	/*position: fixed;*/
+	bottom: 40rpx;
+	font-size: 28rpx;
+	color: #fff;
+	padding: 0 16rpx;
+	text-align: center;
+	margin: 30rpx 0;
+}
+.newaddr{
+	width: 100%;
+	display: block;
+	background: #ff5000;
+	height: 60rpx;
+	line-height: 60rpx;
+	border-radius: 10rpx;
+}
+.newaddr image{
+	width: 40rpx;
+	height: 40rpx;
+	vertical-align: middle;
+}
+.newaddr text{
+	vertical-align: middle;
+}
+.geo{
+	position: absolute;
+	right: 16rpx;
+	color: #ff5000;
+	top: 50%;
+	margin-top: -20rpx;
+}
+.geo image{
+	width: 40rpx;
+	height: 40rpx;
+	vertical-align: middle;
+}
+.geo text{
+	vertical-align: middle;
+}
+.list .item{
+	border-bottom: 1px solid #eee;
+	padding: 16rpx 0;
+}
+.list .item text{
+	display: block;
+	margin: 10rpx 0;
+	padding: 0 16rpx;
+}
+.list .item .itemtitle{
+	font-size: 28rpx;
+	color: #333333;
+	
+}
+.list .item .address{
+	color: #6b6b6b;
+}

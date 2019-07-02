@@ -1,0 +1,127 @@
+/**app.wxss**/
+page{
+ background: #f2f2f2;
+ /*font-family: MicroSoft YaHei,Arial;*/
+ font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+}
+input{
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+
+.wrapper{
+  padding: 16rpx;
+  box-sizing: border-box;
+  background: #fff;
+  width: 100%;
+  font-size: 24rpx;
+  position: relative;
+}
+
+button.red {
+	color: #fff;
+	background: #ff5000;
+}
+button.red:after {
+	border-color: rgba(255, 133, 111, 0.3);
+}
+button.red.hover {
+	background: #ff5000;
+}
+button.red.disabled {
+	background: #aaa;
+  color: #fff;
+}
+
+.title{
+	width: 100%;
+	font-size: 24rpx;
+	color: #8a8a8a;
+	padding: 26rpx 16rpx 16rpx;
+}
+
+.list{
+    font-size: 24rpx;
+    width: 100%;
+    background: #fff;
+}
+.list-item{
+    border-bottom: 1px solid #f2f2f2;
+    padding: 16rpx;
+    display: flex;
+    align-items: center;
+}
+.list-item image{
+    width: 30rpx;
+    height: 30rpx;
+    vertical-align: middle;
+}
+.list-item-info{
+    flex: 0 0 160rpx;
+}
+.pos-right{
+    flex: 1;
+    text-align: right;
+}
+.common-header{
+     width: 100%;
+}
+.common-header .header {
+	display: -webkit-flex;
+    width: 100%;
+    padding: 16rpx 0;
+	background: #fff;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.common-header .header .icon {
+	width: 40rpx;
+	height: 40rpx;
+	vertical-align: middle;
+}
+
+.common-header .header .search {
+	-webkit-flex: 1;
+	color: #000;
+	font-size: 24rpx;
+	line-height: 24rpx;
+	padding:0 20rpx;
+	border-radius: 10rpx;
+	background: #f0eff5;
+    margin-left: 16rpx;
+}
+
+.common-header .header .search .icon {
+	float: left;
+	margin: 6rpx 5rpx 0 0;
+}
+
+.common-header .header button {
+	margin-left: 20rpx;
+	font-size: 24rpx;
+    margin-right: 16rpx;
+	padding-left:10px;
+	padding-right: 10px;
+}
+
+.common-header .header input {
+	height: 24rpx;
+    line-height: 24rpx;
+}
+.user-info text{
+	margin-right: 30rpx;
+}
+.user-name{
+	font-weight: bold;
+}
+.user-addr{
+	margin-top: 10rpx;
+	color: #999;
+}

@@ -1,0 +1,40 @@
+<view class="container">
+    <view class="carttitle">常顺斋超市</view>
+    <view wx:for="{{carts}}" class="carts-item" data-title="{{item.title}}" data-url="{{item.url}}" wx:key="">
+        <view class="carts-wrap"> 
+            <view class="cartitem">
+                <icon wx:if="{{item.selected}}" type="success_circle" size="20" bindtap="bindCheckbox" data-index="{{index}}" class="my-check" color="#ff5000"></icon>
+                <icon wx:else type="circle" size="20" bindtap="bindCheckbox" data-index="{{index}}" class="my-check"></icon>
+                <image src="{{item.image}}" class="cart-shop" mode="aspectFill"></image>
+                <view class="my-left">
+                    <view class="pro-title">{{item.name}}</view>
+                    <view class="price">¥{{item.price}}</view>
+                    <view class="original">¥{{item.original}}</view>
+                </view>
+                <!--<view class="my-right">
+                    <icon class="iconfont del"/>
+                    <text class="gay">￥{{item.price}}</text>
+                </view>-->
+                <view class="pro-btn">
+                    <!-- 减号 -->
+                    <image class="reduce" src="/images/reduce.png" data-index="{{index}}" bindtap="bindMinus"></image>
+                    <!--<text class="{{minusStatuses[index]}} bnt" data-index="{{index}}" bindtap="bindMinus">-</text>-->
+                    <!-- 数值 -->
+                    <input type="number" class="input" value="{{item.num}}" />
+                    <!-- 加号 -->
+                    <image class="add" src="/images/add_card.png" data-index="{{index}}" bindtap="bindPlus"></image>
+                    <!--<text class="normal bnt" data-index="{{index}}" bindtap="bindPlus">+</text>]-->
+                </view>
+            </view>
+        </view> 
+    </view>
+    <view class="settle">
+        <view class="ctrls" bindtap="bindSelectAll">
+            <icon wx:if="{{selectedAllStatus}}" type="success_circle" size="20"></icon>
+            <icon wx:else type="circle" size="20"></icon>
+            <text>全选</text>
+        </view>
+        <view class="count" data='{{sep}}'>商品总额：￥<text>{{count}}</text></view>
+        <view class="settle-btn" bindtap="submit">去结算</view>
+    </view>
+</view>

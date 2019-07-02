@@ -1,0 +1,45 @@
+view,text{
+	box-sizing: border-box;
+}
+.header {
+	display: -webkit-flex;
+    width: 100%;
+    padding: 16rpx 0;
+	background: #fff;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.header .icon {
+	width: 40rpx;
+	height: 40rpx;
+	vertical-align: middle;
+}
+
+.header .search {
+	-webkit-flex: 1;
+	color: #000;
+	font-size: 24rpx;
+	line-height: 24rpx;
+	padding:0 20rpx;
+	border-radius: 10rpx;
+	background: #f0eff5;
+    margin-left: 16rpx;
+}
+
+.header .search .icon {
+	float: left;
+	margin: 6rpx 5rpx 0 0;
+}
+
+.header button {
+	margin-left: 20rpx;
+	font-size: 24rpx;
+    margin-right: 16rpx;
+	padding-left:10px;
+	padding-right: 10px;
+}
+
+.header input {
+	height: 24rpx;
+    line-height: 24rpx;
+}

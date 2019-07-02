@@ -1,0 +1,24 @@
+<view class="container">
+    <view class="common-header">
+        <view class="header">
+            <view class="search">
+                <image class="icon" src="/images/search.png"/>
+                <input placeholder="{{placeholder}}" auto-focus/>
+            </view>
+            <button class="red" size="mini" hover-class="hover" loading="" plain="" bindtap="doSearch">搜索
+            </button>
+        </view>
+    </view>
+    <view class="wrapper">
+        <view class="search-tl">热门搜索</view>
+        <view class="search-con">
+            <text>矿泉水</text><text>雪碧</text><text>雪碧</text><text>可乐</text><text>康师傅</text><text>薯片</text><text>方便面</text><text>洗衣液</text><text>雪碧</text><text>可乐</text><text>康师傅</text>
+        </view>
+    </view>
+    <view class="wrapper margin">
+        <view class="search-tl">历史搜索 <image src="/images/clear.png" bindtap="clearHistory"></image></view>
+        <view class="search-con">
+            <text>矿泉水</text><text>雪碧</text>
+        </view>
+    </view>
+</view>

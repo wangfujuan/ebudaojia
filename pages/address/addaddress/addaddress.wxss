@@ -1,0 +1,24 @@
+view{
+    box-sizing: border-box;
+}
+.radio{
+    margin-right: 40rpx;
+}
+.list-item .address image{
+    width: 40rpx;
+    height: 40rpx;
+}
+.list-item .address text{
+    vertical-align: middle;
+    color: #999;
+}
+.save{
+    width: 610rpx;
+    font-size: 30rpx;
+    background: #ff5000;
+    color: #fff;
+    height: 80rpx;
+    line-height: 80rpx;
+    margin-top: 70rpx;
+
+}

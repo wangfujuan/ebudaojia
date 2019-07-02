@@ -1,0 +1,22 @@
+<view class="container">
+    <view class="shopbox">
+        <view class="shop-logo">
+            <image src="/images/product/shop_2.png"></image>
+        </view>
+        <view class="shop-info">
+            <view class="name">美宜佳超市</view>
+            <view class="desc">已售：1029</view>
+            <view class="desc">12km | ¥15起送 | ¥2配送费</view>
+        </view>
+    </view>
+    <view class="shopbox">
+        <view class="shop-logo">
+            <image src="/images/product/shop_2.png"></image>
+        </view>
+        <view class="shop-info">
+            <view class="name">美宜佳超市</view>
+            <view class="desc">已售：1029</view>
+            <view class="desc">12km | ¥15起送 | ¥2配送费</view>
+        </view>
+    </view>
+</view>

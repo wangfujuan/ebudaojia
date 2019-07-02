@@ -1,0 +1,52 @@
+<view class="container">
+    <swiper class="banner" indicator-dots="true" autoplay="true" interval="3000" duration="500">
+        <block wx:for="{{productItemData.detail}}" wx:key="id">
+            <swiper-item>
+                <image data-id="{{index}}" src="{{item.img}}"/>
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="wrapper margintop">
+        <view class="name">{{productItemData.name}}</view>
+        <view class="sum">月售{{productItemData.sold}}份</view>
+        <view class="price">¥<text>{{productItemData.price}}</text></view>
+        <image bindtap="tapAddCart" data-id="{{productItemData.id}}" class="addcart" src="/images/add_card.png"></image>
+    </view>
+    <view class="wrapper margintop">
+        <view class="name">进店的人都买了</view>
+        <view class="product">
+            <view class="product-item"  wx:for="{{products}}" wx:for-item="product" wx:key="id">
+                <image src="{{product.img}}"></image>
+                <text>{{product.name}}</text>
+                <view class="price"><text class="nowprice">¥{{product.nowprice}}</text></view>
+            </view>
+        </view>
+    </view>
+    <view class="cart-detail" hidden="{{!showCartDetail||!cart.count}}">
+        <view class="mask" bindtap="hideCartDetail"></view>
+        <view class="list">
+            <view class="item" wx:for="{{cart.list}}" wx:for-index="id" wx:for-item="num" wx:key="id">
+                <view class="name ellipsis">{{productItemData.name}}</view>
+                <view class="total">￥<text>{{productItemData.price*cart.list[id]}}</text></view>
+                <image class="reduce" src="/images/reduce.png" data-id="{{id}}" bindtap="tapReduceCart"></image>
+                <view class="num">{{num}}</view>
+                <image class="add" src="/images/add_card.png" data-id="{{id}}" bindtap="tapAddCart"></image>
+            </view>
+        </view>
+    </view>
+    <view class="cart">
+        <view class="data" bindtap="showCartDetail">
+            <view class="icon {{cart.count?'':'disabled'}}">
+                <image src="/images/{{cart.count?'cart_white':'cart'}}.png"></image>
+                <block wx:if="{{cart.count}}">
+                    <view class="count">{{cart.count}}</view>
+                </block>
+            </view>
+            <view class="total">￥{{cart.total}}</view>
+        </view>
+        <button class="{{cart.total > shop.lowup?'':'disabled'}}" formType="submit" disabled="{{cart.total < shop.lowup}}" bindtap="submit">					
+            <text class="{{cart.total < shop.lowup ? 'hidden': ''}}">去结算</text>
+            <text class="{{cart.total > shop.lowup ? 'hidden': ''}}">¥{{shop.lowup}}起送</text>
+        </button>
+    </view>
+</view>

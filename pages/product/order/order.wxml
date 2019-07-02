@@ -1,0 +1,81 @@
+<view class="container">  
+    <view class="wrapper">
+        <view class="order-addr">
+            <image class="order-icon" src="/images/addr_fill.png"></image>
+            <view>
+                <view class="user-info"><text class="user-name">王芙娟</text><text>女士</text><text>18522636527</text></view>
+                <view class="user-addr">朝外SOHO朝外大街乙6号</view>
+            </view>
+            <view class="pos-right">
+                <image src="/images/right.png"></image>
+            </view>
+        </view>              
+	</view>
+    <image class="line" src="/images/line.png"></image>
+    <view class="list">
+        <view class="list-item" bindtap="selectAddr">
+            <text class="list-item-info">支付方式</text>
+            <view class="pos-right">
+                <image src="/images/weixin.png"></image><text>微信支付</text><image src="/images/right.png"></image>
+            </view>
+        </view>
+        <view class="list-item">
+            <text class="list-item-info">添加备注</text>
+            <view class="pos-right">
+                <image src="/images/right.png"></image>
+            </view>
+        </view>
+    </view>
+    <view class="list">
+        <view class="list-item shoptl" bindtap="selectAddr">
+            <image class="shopicon" src="/images/table_icon_shop_full.png"></image><text class="list-item-info">常顺斋超市</text>
+        </view>
+        <view class="product-item">
+            <view class="product-line">
+                <text class="list-item-info">矿泉水</text>
+                <view class="pos-right">
+                    <text class="num">× 3</text><text>¥6</text>
+                </view>
+            </view>
+            <view class="product-line">
+                <text class="list-item-info">王老吉凉茶</text>
+                <view class="pos-right">
+                    <text class="num">× 1</text><text>¥5</text>
+                </view>
+            </view>
+            <view class="product-line">
+                <text class="list-item-info">康师傅桶面</text>
+                <view class="pos-right">
+                    <text class="num">× 2</text><text>¥10</text>
+                </view>
+            </view>
+        </view>
+        <view class="list-item">
+            <text class="list-item-info">配送日期</text>
+            <view class="pos-right">
+                <text>默认1小时送达</text>
+            </view>
+        </view>
+        <view class="list-item">
+            <text class="list-item-info">优惠券</text>
+            <view class="pos-right">
+                <text>没有可用优惠券</text>
+            </view>
+        </view>
+        <view class="list-item">
+            <text class="list-item-info">配送费</text>
+            <view class="pos-right">
+                <text>¥2</text>
+            </view>
+        </view>
+        <view class="list-item">
+            <view class="pos-right">
+                <text>订单¥40.5</text><text>优惠¥10</text><text class="fontbold">待支付¥30.5</text>
+            </view>
+        </view>
+    </view>
+    <view class="order">
+        <view class="data">待支付¥30.5</view>
+        <view class="order-btn">提交订单</view>
+    </view>
+</view>
